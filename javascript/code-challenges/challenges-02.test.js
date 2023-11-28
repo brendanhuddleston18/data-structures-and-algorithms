@@ -24,6 +24,10 @@ Write a function named addOne that, given an array of numbers, uses map to retur
 
 const addOne = (arr) => {
   // Solution code here...
+  let localArray = arr.map((value, index) => {
+    return value + 1;
+  });
+  return localArray
 };
 
 /* ------------------------------------------------------------------------------------------------
