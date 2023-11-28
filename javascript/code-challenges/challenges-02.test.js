@@ -75,7 +75,7 @@ const forEachTwoToThe = (arr) => {
   // Solution code here...
   let localArray = [];
   arr.forEach((value,index) => {
-    localArray.push(Math.pow(2, arr[i]));
+    localArray.push(Math.pow(2, value));
   });
   return localArray;
 };
