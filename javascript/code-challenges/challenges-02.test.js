@@ -107,7 +107,8 @@ For example: charCode(['h','i']) returns [104, 105].
 const charCode = (arr) => {
   // Solution code here...
   let localArray = arr.map((value, index) => {
-    return String.charCodeAt(index);
+    let char = value.charCodeAt(index);
+    return char;
   });
   return localArray;
 };
