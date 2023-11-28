@@ -27,7 +27,7 @@ const addOne = (arr) => {
   let localArray = arr.map((value, index) => {
     return value + 1;
   });
-  return localArray
+  return localArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -38,6 +38,10 @@ Write a function named addQuestion that, given an array of strings, uses map to 
 
 const addQuestion = (arr) => {
   // Solution code here...
+  let localArray = arr.map((value, index) => {
+    return `${value}?`;
+  });
+  return localArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
