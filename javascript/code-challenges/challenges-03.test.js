@@ -70,9 +70,14 @@ Write a function named notInFirstArray that, given two arrays as input, uses fil
 
 For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
-
+// ChatGPT helped me solve this
 const notInFirstArray = (forbiddenValues, arr) => {
   // Solution code here...
+  let newArray = arr.filter((value)=> {
+    // Had no idea you could put `!` in front of parameters
+    if(!forbiddenValues.includes(value)){return true;}
+  });
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -116,6 +121,8 @@ const snorlaxData = {
 
 const getBaseStatGreaterThan = (arr, minBaseStat) => {
   // Solution code here...
+  let newArray = arr.filter(value => value.baseStat > minBaseStat);
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
