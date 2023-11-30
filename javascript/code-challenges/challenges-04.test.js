@@ -57,6 +57,11 @@ Prove that the original people, stuff, and state are unchanged.
 
 const setState = (arr) => {
   // Solution code here...
+  let newState = {
+    people: [...people],
+    stuff: {...stuff}
+  };
+  return newState;
 };
 
 
@@ -77,6 +82,18 @@ Ensure that the original people array and stuff objects are unchanged
 
 const newState = (arr) => {
   // Solution code here...
+
+  let newObject = {
+    people: [...people],
+    stuff: {
+      ...stuff,
+      toys: stuff.toys + 1,
+      toothbrush: 'brand new',
+      cars:[...stuff.cars, 'Ford'],
+
+    }
+  }
+  return newObject;
 };
 
 
