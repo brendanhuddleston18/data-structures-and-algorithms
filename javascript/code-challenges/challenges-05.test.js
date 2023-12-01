@@ -44,6 +44,12 @@ Write a function named checkValues that takes in an object and a value and retur
 
 const checkValues = (obj, value) => {
   // Solution code here...
+  let test = false;
+
+  Object.values(obj).forEach(objValue => {
+    objValue === value ? test = true : test;
+});
+  return test;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -67,6 +73,8 @@ HR has asked you to change the data to make it easier to print so that it looks 
 
 const updateNumbers = (obj) => {
   // Solution code here...
+  let newNumbers = Object.entries(obj).map(([name, phoneNumber]) => `${name}: ${phoneNumber}`);
+  return newNumbers;
 };
 
 
@@ -123,6 +131,9 @@ const characters = [
 const getHouses = (arr) => {
   let houses = [];
   // Solution code here...
+  houses = characters.map((value) => {
+    return value.house;
+  });
   return houses;
 };
 
