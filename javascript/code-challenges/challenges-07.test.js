@@ -49,6 +49,10 @@ HINT: Beware... JS default is "Lexical" ordering.
 
 const sortNumbers = (arr) => {
   // Solution code here...
+  let newArray = arr.sort((a, b) => {
+    return a-b;
+  });
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
