@@ -11,7 +11,6 @@ const longestString = (arr) => {
   let longestIdx = 0;
   let longestWord = arr[0];
   for (let i = 0; i < arr.length; i++) {
-
     if (arr[i].length > longestWord.length) {
       longestWord = arr[i];
       longestIdx = i;
@@ -31,7 +30,7 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['t', 
 const firstLetters = (arr) => {
   // Solution code here...
   return arr.map((value, idx) => {
-    return value.substr(0,1);
+    return value.substr(0, 1);
   });
 };
 
@@ -45,7 +44,7 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this
 
 const findHappiness = (arr) => {
   // Solution code here...
- return arr.filter(value => value.includes(':)'));
+  return arr.filter((value) => value.includes(":)"));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -71,7 +70,6 @@ const standardizePhoneNumbers = (arr) => {
   });
 };
 
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -82,9 +80,9 @@ For example, 'abcdefg' returns 'bdf'
 
 const onlyOddChars = (str) => {
   // Solution code here...
-  let newStr = '';
-  for(let i = 0; i < str.length; i++){
-    if(i % 2){
+  let newStr = "";
+  for (let i = 0; i < str.length; i++) {
+    if (i % 2) {
       newStr += str[i];
     }
   }
@@ -100,8 +98,8 @@ Write a function named allHappy that takes in an array of strings and returns a 
 const allHappy = (arr) => {
   // Solution code here...
   // Zach helped me with this
- return arr.every(value => (value.includes(':)') ? true : false));
-}
+  return arr.every((value) => (value.includes(":)") ? true : false));
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
