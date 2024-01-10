@@ -8,6 +8,8 @@
 
 - [Array Insert shift](./docs/array_insert_shift/README.md)
 
+- [Array Binary Search](./docs/array_binary_search/README.md)
+
 ### Folder and Challenge Setup
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.
