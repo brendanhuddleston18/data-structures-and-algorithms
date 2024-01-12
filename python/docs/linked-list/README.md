@@ -1,4 +1,4 @@
-# Array Insert Shift
+# Linked List
 <!-- Description of the challenge -->
 
 - In this challenge, I create a whiteboard that will input a user number into the middle of a list

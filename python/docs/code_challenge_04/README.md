@@ -1,4 +1,4 @@
-# Array Reverse
+# Code Challenge 04
 <!-- Description of the challenge -->
 
 - In this challenge, I create a whiteboard that takes in a list made up of other lists and add the sums of each number into a new list
