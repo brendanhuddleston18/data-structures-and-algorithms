@@ -25,11 +25,18 @@ class LinkedList:
             if current_node.value == value:
                 return True
             current_node = current_node.next
-    
+        return False
     def __str__(self):
-        # Returns: a string representing all the values in the LInked List:
-        current = self.head
-    
+        # Returns: a string representing all the values in the Linked List:
+        result = []
+        current_node = self.head
+        string = ''
+        while current_node:
+            string += f"{{ {current_node.value} }} -> "
+        string += "NULL"
+
+
+        return string
 
 
 
