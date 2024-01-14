@@ -12,7 +12,7 @@
 
 - [Code Challenge 04](./docs/code_challenge_04/README.md)
 
-- [Linked Lists](./)
+- [Linked Lists](./docs/linked-list/README.md)
 
 ### Folder and Challenge Setup
 
