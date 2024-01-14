@@ -1,4 +1,4 @@
-# Array Reverse
+# Array Binary Search
 <!-- Description of the challenge -->
 
 - In this challenge, I create a whiteboard that shows the process of creating a binary search function that takes in an array and number.  The code sorts the array and uses recursion to find the index number of the user inputted number.
