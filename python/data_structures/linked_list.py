@@ -26,6 +26,7 @@ class LinkedList:
                 return True
             current_node = current_node.next
         return False
+    
     def __str__(self):
         # Returns: a string representing all the values in the Linked List:
         result = []
@@ -33,6 +34,7 @@ class LinkedList:
         string = ''
         while current_node:
             string += f"{{ {current_node.value} }} -> "
+            current_node = current_node.next
         string += "NULL"
 
 
