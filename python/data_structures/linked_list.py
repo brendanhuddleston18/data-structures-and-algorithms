@@ -6,7 +6,17 @@ class Node():
 
 class LinkedList:
     """
-    Put docstring here
+    - Creates a LinkedList
+    - Head property will point to the first node in list
+    - Multiple nodes can be inserted
+
+    Parameters:
+    - None
+
+    Return:
+    - Returns True when a value is found that exists
+    - Returns false when a value is not found
+    - Returns a collection of all values that exist
     """
 
     def __init__(self):
