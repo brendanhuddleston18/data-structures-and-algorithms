@@ -23,6 +23,17 @@ class LinkedList:
         # initialization here
         self.head = None
 
+    def __str__(self):
+        # Returns: a string representing all the values in the Linked List:
+        result = []
+        current_node = self.head
+        string = ''
+        while current_node:
+            string += f"{{ {current_node.value} }} -> "
+            current_node = current_node.next
+        string += "NULL"
+        return string
+    
     def insert(self,value):
         # 
         new_node = Node(value)
@@ -37,20 +48,44 @@ class LinkedList:
             current_node = current_node.next
         return False
     
-    def __str__(self):
-        # Returns: a string representing all the values in the Linked List:
-        result = []
+    def append(self, value):
         current_node = self.head
-        string = ''
-        while current_node:
-            string += f"{{ {current_node.value} }} -> "
+        while current_node.next:
+           current_node = current_node.next
+        current_node.next = Node(value)
+
+    def insert_before(self, value, new_value):
+        new_node = Node(new_value)
+        current_node = self.head
+
+        if current_node.value == value:
+            new_node.next = self.head
+            self.head = new_node
+            return self.__str__()
+        
+        while current_node.next:
+            if current_node.next.value == value:
+                new_node.next = current_node.next
+                current_node.next = new_node
+                return self.__str__()
             current_node = current_node.next
-        string += "NULL"
+        return self.__str__()
+    
+    def insert_after(self, value, new_value):
+        new_node = Node(new_value)
+        current_node = self.head
 
-
-        return string
-
-
+        # while current_node.value == value:
+        #     current_node.next = new_node
+        #     return self.__str__()
+        
+        while current_node.next:
+            if current_node.value == value:
+                new_node.next = current_node.next
+                current_node.next = new_node
+                return self.__str__()
+            current_node = current_node.next
+        return self.__str__()
 
 class TargetError:
     pass
