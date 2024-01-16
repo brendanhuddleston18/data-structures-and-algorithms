@@ -58,6 +58,9 @@ class LinkedList:
         new_node = Node(new_value)
         current_node = self.head
 
+        if self.head is None:
+            raise TargetError("List is empty")
+
         if current_node.value == value:
             new_node.next = self.head
             self.head = new_node
@@ -69,15 +72,15 @@ class LinkedList:
                 current_node.next = new_node
                 return self.__str__()
             current_node = current_node.next
-        return self.__str__()
+        raise TargetError("Value not found")
+        # return self.__str__()
     
     def insert_after(self, value, new_value):
         new_node = Node(new_value)
-        current_node = self.head
+        current_node = self.head         
 
-        # while current_node.value == value:
-        #     current_node.next = new_node
-        #     return self.__str__()
+        if self.head is None:
+            raise TargetError("List is empty")
         
         while current_node.next:
             if current_node.value == value:
@@ -85,7 +88,8 @@ class LinkedList:
                 current_node.next = new_node
                 return self.__str__()
             current_node = current_node.next
-        return self.__str__()
+        raise TargetError("Value not found")
+        # return self.__str__()
 
-class TargetError:
-    pass
+class TargetError(Exception):
+    print(Exception)
