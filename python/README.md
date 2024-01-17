@@ -16,6 +16,8 @@
 
 - [Linked List insetion](./docs/linked_list_insertions/README.md)
 
+- [Linked List kth from end](./docs/linked_list_kth/README.md)
+
 ### Folder and Challenge Setup
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.
