@@ -90,6 +90,26 @@ class LinkedList:
             current_node = current_node.next
         raise TargetError("Value not found")
         # return self.__str__()
+    
+    def kth_from_end(self, k):
+        og_list = []
+        current_node = self.head
+
+        if self.head is None:
+            raise TargetError("List is empty")
+        
+        while current_node:
+            og_list.append(current_node.value)
+            current_node = current_node.next
+            
+        if k < 0:
+            raise TargetError("Please enter a number between 0 and length of linked list")
+        elif k <= len(og_list)-1:
+            og_list.reverse()
+            return og_list[k]   
+        else:
+            raise TargetError("Index is larger than length of the Linked List")
+        
 
 class TargetError(Exception):
     print(Exception)
