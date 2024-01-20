@@ -8,7 +8,7 @@ class Node():
 
 class Stack:
     """
-    Creates a stack data structure
+    Creates a stack data structure, with push, pop, is_empty and peek methods
     """
 
     def __init__(self):
@@ -46,6 +46,3 @@ class Stack:
 
         return peeked_value
     
-
-# class InvalidOperationError(Exception):
-#         print(Exception)
