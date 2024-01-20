@@ -20,7 +20,7 @@
 
 - [Linked List Zip](./docs/linked_list_zip/README.md)
 
-- [Stack-and-queue]()
+- [Stack-and-queue](./docs/stack_and_queue/README.md)
 
 ### Folder and Challenge Setup
 
