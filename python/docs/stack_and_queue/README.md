@@ -1,4 +1,4 @@
-# Linked List
+# Stack and Queue
 <!-- Description of the challenge -->
 
 - In this challenge, I create a stack and queue class.

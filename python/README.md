@@ -22,6 +22,8 @@
 
 - [Stack-and-queue](./docs/stack_and_queue/README.md)
 
+- [Stack-queue-pseudo](./docs/stack_queue_pseudo/README.md)
+
 ### Folder and Challenge Setup
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.
