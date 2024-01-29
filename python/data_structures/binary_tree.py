@@ -1,3 +1,5 @@
+from data_structures import invalid_operation_error
+
 class BinaryTree:
     """
     Put docstring here
@@ -63,6 +65,27 @@ class BinaryTree:
             return left_result + right_result + result
         
         return walk(self.root)
+    
+    def find_maximum_value(self):
+    
+        max_val = {'max_val': 0}
+
+        def walk(node, max_val):
+            if node is None:
+                return None
+            
+    
+            if node.value > max_val['max_val']:
+                max_val['max_val'] = node.value
+
+            walk(node.left, max_val)
+            walk(node.right, max_val)
+
+            # return max_val
+
+        walk(self.root, max_val)
+        # return walk(self.root, max_val)
+        return max_val['max_val']
 
 class Node:
     
