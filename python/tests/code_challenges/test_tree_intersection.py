@@ -8,7 +8,7 @@ def test_exists():
     assert tree_intersection
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")–
 def test_tree_intersection():
 
     tree_a = BinaryTree()
