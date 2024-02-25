@@ -3,9 +3,6 @@ from data_structures.hashtable import Hashtable
 
 def tree_intersection(tree1, tree2):
   hashmap = Hashtable()
-  print("tree one", tree1.pre_order())
-  print("tree two", tree2.pre_order())
-
 
   match_list = []
   def set_hashmap(node):
@@ -31,3 +28,5 @@ def tree_intersection(tree1, tree2):
   check_hashmap(tree2.root)
 
   return match_list
+
+
