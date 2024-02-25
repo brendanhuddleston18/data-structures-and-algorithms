@@ -36,6 +36,8 @@
 
 - [Hashtable Repeated Word](./docs/hashtable_repeated_word/README.md)
 
+- [Tree Intersection](./docs/tree_intersection/README.md)
+
 ### Folder and Challenge Setup
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.
